@@ -1,1 +1,44 @@
+//Sourcemod Başlangıç
+//------------------
+//Başlangıç Olarak Favori Metin Editöründe Boş Bir Sayfa Aç Yapacağın Herşey Buradan Geçecek Kaynak Olarak #include <sourcemod> Ekliyoruz.
 
+#include <sourcemod>
+
+//Plugin İnfomuzu Oluşturalım.
+
+/**
+ * Plugin Bilgilerimiz
+ */
+struct Plugin
+{
+   public const char[] name;		/**< Plugin İsimi */
+   public const char[] description;	/**< Plugin Açıklaması */
+   public const char[] author;		/**< Plugin Yazarı */
+   public const char[] version;		/**< Plugin Versiyonu */
+   public const char[] url;			/**< Plugin URL */
+};
+
+//Ve Bu.
+
+/**
+ * Örnek:
+ *
+ * public Plugin myinfo =
+ * {
+ *    name = "Merhaba",
+ *    //yukarıdaki bilgilerimiz.
+ * };
+ */
+public Plugin myinfo;
+
+
+//Tam Bir Şekilde Nasıl Yapacağız ?
+
+public Plugin myinfo =
+{
+	name = "Merhaba Dünya",
+	author = "Ben",
+	description = "Ilk Pluginim",
+	version = "1.0",
+	url = "http://www.sourcemod.net/"
+};
