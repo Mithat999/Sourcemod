@@ -1,0 +1,18 @@
+//Sourcemod İlk Pluginimiz.
+
+#include <sourcemod>
+ 
+public Plugin myinfo =
+{
+	name = "Merhaba Dunya",
+	author = "Ben",
+	description = "Ilk Pluginim",
+	version = "1.0",
+	url = "http://www.sourcemod.net/"
+};
+ 
+public void OnPluginStart()
+{
+//PrintToServer Komutumuz Consola Belirlediğiniz Yazıyı Yollar.
+	PrintToServer("Merhaba Dunya!");
+}
